@@ -193,8 +193,8 @@ Indicates whether the product is eligible for a subscription.
 ### `frequency` (Integer, in seconds)
 Defines how often the subscription generates a new order.  
 - Example values:  
-  - `86400` → Daily order creation (60 × 60 × 24 seconds)  
-  - `604800` → Weekly order creation (60 × 60 × 24 × 7 seconds)  
+  - `86400` → Daily order creation (60 × 60 × 24 seconds - 1 day)  
+  - `604800` → Weekly order creation (60 × 60 × 24 × 7 seconds - 7 days)  
   - `2592000` → Monthly order creation (approx. 30 days in seconds)  
 
 With these attributes, the module synchronizes data against the subscription table.
