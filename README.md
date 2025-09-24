@@ -259,5 +259,5 @@ flowchart TD
     D --> E[Update timestamps created_at / updated_at]
     E --> F{Subscription active?}
     F -->|Yes| D
-    F -->|No| G[Archive subscription (archivable=true)]
+    F -->|No| G[Archive subscription archivable=true]
     G --> H[Preserve historical data]
