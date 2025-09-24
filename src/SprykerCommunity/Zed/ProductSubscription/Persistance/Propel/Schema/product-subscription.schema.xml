@@ -6,6 +6,7 @@
         <column name="fk_customer" required="true" type="INTEGER"/>
         <column name="fk_sales_order_item" required="true" type="INTEGER"/>
         <column name="frequency" required="true" type="INTEGER"/>
+        <column name="next_schedule" required="true" type="INTEGER"/>
         <behavior name="timestampable"/>
         <behavior name="archivable"/>
         <foreign-key name="spy_cus_dat_cha-fk_customer" foreignTable="spy_customer" phpName="Customer" refPhpName="CustomerDataChangeRequest" onDelete="CASCADE">
