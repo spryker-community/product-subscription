@@ -253,7 +253,7 @@ Indicates whether the subscription can be archived (soft-deleted) instead of per
 
 ```mermaid
 flowchart TD
-    A[Product setup with attributes subscribable + frequency (in seconds)] --> B[Customer purchase]
+    A[Product setup with attributes subscribable + frequency in seconds] --> B[Customer purchase]
     B --> C[Create subscription entry in product_subscription table]
     C --> D[Recurring order generation based on frequency in seconds]
     D --> E[Update timestamps created_at / updated_at]
