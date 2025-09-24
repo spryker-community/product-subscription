@@ -3,6 +3,7 @@
 declare(strict_types = 1);
 
 namespace SprykerCommunity\Zed\ProductSubscription\Business;
+
 class ProductSubscriptionRenewer implements ProductSubscriptionRenewerInterface
 {
     public function renew(): void
