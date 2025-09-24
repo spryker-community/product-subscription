@@ -41,7 +41,7 @@ This README provides step-by-step instructions to integrate the SprykerCommunity
 ## Prerequisites
 
 1. Spryker B2B Demo Shop installed and running
-2. Git access to clone the dummy module
+2. Git access to clone the Product Subscription module
 3. Composer installed
 
 ## Workflow
@@ -66,14 +66,14 @@ Add the module directory to your main project's .gitignore file to prevent track
 /local-packages/
 ```
 
-### Install the Dummy Module
+### Install the Product Subscription Module
 
-1. Clone Dummy Module
+1. Clone Product Subscription Module
 
-Clone the dummy module repository into the module directory:
+Clone the Product Subscription module repository into the module directory:
 
 ```bash
-git clone git@github.com:spryker-community/dummy-module.git dummy-module
+git clone git@github.com:spryker-community/product-subscription.git
 ```
 
 Your directory structure should now look like:
@@ -104,7 +104,7 @@ Add the path repository configuration to your main project's composer.json:
     "repositories": [
         {
             "type": "path",
-            "url": "local-packages/dummy-module",
+            "url": "local-packages/product-subscription",
             "options": {
                 "symlink": true
             }
@@ -118,7 +118,7 @@ Add the path repository configuration to your main project's composer.json:
 Run the composer require command from your demo shop root directory:
 
 ```bash
-composer require spryker-community/dummy-module:@dev
+composer require spryker-community/product-subscription:@dev
 ```
 
 ### Make your project aware of Spryker Community
